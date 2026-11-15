@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#020513">
+  <title>Electric Border Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Electric border animation</h1>
+
+    <section class="demo-frame" aria-label="Electric border animation demo">
+      <div class="electric-card" id="electricCard">
+        <div class="card-inner">
+          <h2>VOLTAGE</h2>
+          <p>DANGER: HIGH FREQUENCY</p>
+          <div class="cardbox">SYSTEM ACTIVE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="code-panel">
+      <div class="code-heading">
+        <span>HTML / CSS</span>
+        <button id="copyButton" type="button">Copy HTML</button>
+      </div>
+      <pre><code id="htmlCode">&lt;div class="electric-card" id="electricCard"&gt;
+  &lt;div class="card-inner"&gt;
+    &lt;h2&gt;VOLTAGE&lt;/h2&gt;
+    &lt;p&gt;DANGER: HIGH FREQUENCY&lt;/p&gt;
+    &lt;div class="cardbox"&gt;SYSTEM ACTIVE&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+
+    <div class="controls">
+      <button id="toggleButton" type="button" aria-pressed="true">Pause effect</button>
+      <label for="speedControl">Electric speed <output id="speedValue">3s</output></label>
+      <input id="speedControl" type="range" min="1" max="8" value="3">
+    </div>
+    <p class="note">Move your pointer over the card to intensify the electric glow.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
